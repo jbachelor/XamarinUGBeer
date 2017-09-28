@@ -58,6 +58,12 @@
     <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Views\SplashScreenPage.xaml.cs">
       <DependentUpon>*.xaml</DependentUpon>
     </Compile>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Views\AddBeerPage.xaml.cs">
+      <DependentUpon>*.xaml</DependentUpon>
+    </Compile>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Views\AddBreweryPage.xaml.cs">
+      <DependentUpon>*.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>

@@ -42,10 +42,10 @@
                             CommandParameter="BreweriesPage"/>
                     <Button Text="Add Brewer"
                             Command="{Binding NavigateCommand}"
-                            CommandParameter="AddBrewery" />
+                            CommandParameter="AddBreweryPage" />
                     <Button Text="Add Beer"
                             Command="{Binding NavigateCommand}"
-                            CommandParameter="AddBeer" />
+                            CommandParameter="AddBeerPage" />
                 </StackLayout>
             </Grid>
         </ContentPage>

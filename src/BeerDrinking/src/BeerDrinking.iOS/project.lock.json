@@ -2088,7 +2088,7 @@
       ]
     },
     "Prism.Forms/7.0.0-pre1": {
-      "sha512": "Y53nOIeb7QOm2H4sMGr/5OEYnWhBkIdi7g9vcxxkJTkGBhHhS6VBUAKo9dkc8Ymz9pm8MD7KVWoE9VDTPNBJzg==",
+      "sha512": "EVo9aLN6rFLzdKo0axR5Q3C+5Z0EJ4Tq/lB+UZZzYKCerdPaVesEo3xo+Gs54iY1Pt4kYxh60DjJuGC8NHFltQ==",
       "type": "package",
       "path": "prism.forms/7.0.0-pre1",
       "files": [
@@ -2224,7 +2224,7 @@
       ]
     },
     "Remotion.Linq/2.1.1": {
-      "sha512": "nBXXCCurvfbdmSEWB1nrVpUGCoLPTuiWhwzlYtpnJI15JbbB2NFDFjilobrped9MdrUv7w+56ZpIs8vIGeiCgg==",
+      "sha512": "IJn0BqkvwEDpP+2qjvci7n4/a9f7DhKESLWb2/uG4xQh3rTkGTBUz69bI4IivCoKkTFAqjXxYDZw2K/npohjsw==",
       "type": "package",
       "path": "remotion.linq/2.1.1",
       "files": [
@@ -3268,10 +3268,12 @@
       ]
     },
     "System.Linq.Queryable/4.0.1": {
-      "sha512": "kJGcvj1JPDCJZrFJfK3OZ4d1M6Iog+kW4Jo5VDtaXQ/GBQnnqRc3diQEgdqqba0+3PpMstGPio+H/Wizd+CnIA==",
+      "sha512": "tLj0I6z5IuCD/8ga5R3FREh86s1lus+wyI84ZvqwQ/hLd12Fx7v76+SmGSDIoqNIaK4nD3p2dwp4PoPaqwyrAA==",
       "type": "package",
       "path": "system.linq.queryable/4.0.1",
       "files": [
+        "System.Linq.Queryable.4.0.1.nupkg.sha512",
+        "System.Linq.Queryable.nuspec",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/monoandroid10/_._",
@@ -3319,9 +3321,7 @@
         "ref/xamarinios10/_._",
         "ref/xamarinmac20/_._",
         "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "system.linq.queryable.4.0.1.nupkg.sha512",
-        "system.linq.queryable.nuspec"
+        "ref/xamarinwatchos10/_._"
       ]
     },
     "System.Net.Http/4.3.0": {
@@ -5355,20 +5355,20 @@
     "Xamarin.iOS,Version=v1.0": []
   },
   "packageFolders": {
-    "/Users/dansiegel/.nuget/packages/": {}
+    "/Users/jbachelor/.nuget/packages/": {}
   },
   "project": {
     "restore": {
-      "projectUniqueName": "/Users/dansiegel/Projects/SDXamarinDevs/September2017/completed/BeerDrinking/src/BeerDrinking.iOS/BeerDrinking.iOS.csproj",
+      "projectUniqueName": "/Users/Shared/src/XamarinUG/2017.09.BeerDrinking/src/BeerDrinking/src/BeerDrinking.iOS/BeerDrinking.iOS.csproj",
       "projectName": "BeerDrinking.iOS",
-      "projectPath": "/Users/dansiegel/Projects/SDXamarinDevs/September2017/completed/BeerDrinking/src/BeerDrinking.iOS/BeerDrinking.iOS.csproj",
-      "projectJsonPath": "/Users/dansiegel/Projects/SDXamarinDevs/September2017/completed/BeerDrinking/src/BeerDrinking.iOS/project.json",
+      "projectPath": "/Users/Shared/src/XamarinUG/2017.09.BeerDrinking/src/BeerDrinking/src/BeerDrinking.iOS/BeerDrinking.iOS.csproj",
+      "projectJsonPath": "/Users/Shared/src/XamarinUG/2017.09.BeerDrinking/src/BeerDrinking/src/BeerDrinking.iOS/project.json",
       "projectStyle": "ProjectJson",
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "/Users/dansiegel/Projects/SDXamarinDevs/September2017/completed/BeerDrinking/src/BeerDrinking/BeerDrinking.csproj": {
-              "projectPath": "/Users/dansiegel/Projects/SDXamarinDevs/September2017/completed/BeerDrinking/src/BeerDrinking/BeerDrinking.csproj"
+            "/Users/Shared/src/XamarinUG/2017.09.BeerDrinking/src/BeerDrinking/src/BeerDrinking/BeerDrinking.csproj": {
+              "projectPath": "/Users/Shared/src/XamarinUG/2017.09.BeerDrinking/src/BeerDrinking/src/BeerDrinking/BeerDrinking.csproj"
             }
           }
         }
@@ -5384,7 +5384,7 @@
       "Refractored.MvvmHelpers": "1.3.2.47-beta",
       "System.ComponentModel": "4.3.0",
       "Xam.FormsPlugin.Iconize": "1.0.10",
-      "Xam.Plugin.Iconize.FontAwesome": "[1.0.10, )",
+      "Xam.Plugin.Iconize.FontAwesome": "1.0.10",
       "Xamarin.FFImageLoading.Forms": "2.2.17",
       "Xamarin.FFImageLoading.Transformations": "2.2.17",
       "Xamarin.Forms": "2.4.0.280",

@@ -27,6 +27,10 @@ namespace BeerDrinking.ViewModels
 
         public DelegateCommand SaveCommand { get; }
 
+        public ObservableRangeCollection<Brewer> Brewers { get; set; }
+
+        public Brewer SelectedBrewer { get; set; }
+
         public override void OnNavigatingTo(NavigationParameters parameters)
         {
             // TODO: Implement your initialization logic
@@ -54,7 +58,7 @@ namespace BeerDrinking.ViewModels
 
         private void OnSaveCommandExecuted()
         {
-            
+
         }
     }
 }

@@ -1,10 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:behaviors="clr-namespace:Prism.Behaviors;assembly=Prism.Forms"
-             Title="{Binding Title}"
-             x:Class="BeerDrinking.Views.AddBeerPage">
-
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:behaviors="clr-namespace:Prism.Behaviors;assembly=Prism.Forms"
+    Title="{Binding Title}"
+    x:Class="BeerDrinking.Views.AddBeerPage">
     <!-- TODO: // Add Some Content -->
-
+    <ScrollView>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Label
+                Text="Name"
+                Grid.Row="0"
+                Grid.Column="0" />
+            <Label
+                Text="ABV"
+                Grid.Row="1"
+                Grid.Column="0" />
+            <Label
+                Text="Style"
+                Grid.Row="2"
+                Grid.Column="0" />
+            <Label
+                Text="IBUs"
+                Grid.Row="3"
+                Grid.Column="0" />
+            <Label
+                Text="Description"
+                Grid.Row="4"
+                Grid.Column="0" />
+            <Label
+                Text="Brewer"
+                Grid.Row="5"
+                Grid.Column="0" />
+            <Entry
+                Text="{Binding Model.Name}"
+                Grid.Row="0"
+                Grid.Column="1" />
+            <Entry
+                Text="{Binding Model.ABV}"
+                Grid.Row="1"
+                Grid.Column="1" />
+            <Entry
+                Text="{Binding Model.Style}"
+                Grid.Row="2"
+                Grid.Column="1" />
+            <Entry
+                Text="{Binding Model.IBUs}"
+                Grid.Row="3"
+                Grid.Column="1" />
+            <Entry
+                Text="{Binding Model.Description}"
+                Grid.Row="4"
+                Grid.Column="1" />
+             <Picker
+                ItemsSource="{Binding Brewers}"
+                SelectedItem="{Binding SelectedBrewer}"
+                Grid.Row="5"
+                Grid.Column="1" />
+            <Button
+                Grid.Row="6"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Text="Save"
+                Command="{Binding SaveCommand}" />
+        </Grid>
+    </ScrollView>
 </ContentPage>

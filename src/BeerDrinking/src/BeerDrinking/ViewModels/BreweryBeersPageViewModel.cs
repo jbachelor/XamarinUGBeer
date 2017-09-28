@@ -31,11 +31,13 @@ namespace BeerDrinking.ViewModels
         public override void OnNavigatingTo(NavigationParameters parameters)
         {
             // TODO: Get the Brewer from the Navigation Parameters and Add/Replace the Beers
+            Beers.ReplaceRange(parameters.GetValue<Brewer>("brewer").Beers);
         }
 
         private async void OnBeerSelectedCommandExecuted(Beer beer)
         {
             // TODO: make a call to the Navigation Service
+            await _navigationService.NavigateAsync("BeerPage", "beer", beer, false, true);
         }
     }
 }

@@ -1,10 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:behaviors="clr-namespace:Prism.Behaviors;assembly=Prism.Forms"
-             Title="{Binding Title}"
-             x:Class="BeerDrinking.Views.AddBreweryPage">
-
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:behaviors="clr-namespace:Prism.Behaviors;assembly=Prism.Forms"
+    Title="{Binding Title}"
+    x:Class="BeerDrinking.Views.AddBreweryPage">
     <!-- TODO: // Add Some Content -->
-
+    <ScrollView>
+        <Grid
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Label
+                Text="Name"
+                Grid.Row="0"
+                Grid.Column="0" />
+            <Label
+                Text="In Business Since"
+                Grid.Row="1"
+                Grid.Column="0" />
+            <Label
+                Text="Location"
+                Grid.Row="2"
+                Grid.Column="0" />
+            <Label
+                Text="Description"
+                Grid.Row="3"
+                Grid.Column="0" />
+            <Label
+                Text="Logo"
+                Grid.Row="4"
+                Grid.Column="0" />
+            <Entry
+                Text="{Binding Model.Name}"
+                Grid.Row="0"
+                Grid.Column="1" />
+            <Entry
+                Text="{Binding Model.InBusinessSince}"
+                Grid.Row="1"
+                Grid.Column="1" />
+            <Entry
+                Text="{Binding Model.Location}"
+                Grid.Row="2"
+                Grid.Column="1" />
+            <Entry
+                Text="{Binding Model.About}"
+                Grid.Row="3"
+                Grid.Column="1" />
+            <Entry
+                Text="{Binding Model.Logo}"
+                Grid.Row="4"
+                Grid.Column="1" />
+            <Button
+                Grid.Row="5"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Text="Save"
+                Command="{Binding SaveCommand}" />
+        </Grid>
+    </ScrollView>
 </ContentPage>

@@ -10,6 +10,7 @@ using BeerDrinking.Strings;
 using BeerDrinking.Models;
 using Prism.AppModel;
 using Realms;
+using System.Diagnostics;
 
 namespace BeerDrinking.ViewModels
 {
@@ -54,7 +55,7 @@ namespace BeerDrinking.ViewModels
 
         private void OnSaveCommandExecuted()
         {
-            
+            Debug.WriteLine($"**** {this.GetType().Name}.{nameof(OnSaveCommandExecuted)}");
         }
     }
 }

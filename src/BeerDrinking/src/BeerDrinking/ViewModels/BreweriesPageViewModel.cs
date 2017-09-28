@@ -34,6 +34,8 @@ namespace BeerDrinking.ViewModels
         private async void OnBrewerySelectedCommandExecuted(Brewer brewer)
         {
             // TODO: make a call to the Navigation Service
+
+            await _navigationService.NavigateAsync("TabbedPage?tab=BreweryDetailPage&tab=BreweryBeersPage", "brewer", brewer);
         }
     }
 }

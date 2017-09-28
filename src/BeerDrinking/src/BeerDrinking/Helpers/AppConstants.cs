@@ -9,11 +9,12 @@ namespace BeerDrinking.Helpers
         // Put constants here that are not of a sensitive nature
         public const string DynamicTabKey = "tab";
 
-        public static RealmConfigurationBase RealmConfiguration
+        public static SyncConfiguration RealmConfiguration
         {
             get
             {
-                return RealmConfiguration.Default;
+                var uri = new Uri(Secrets.RealmServer);
+                return new SyncConfiguration(User.Current, uri);
             }
         }
     }

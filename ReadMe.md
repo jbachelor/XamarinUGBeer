@@ -1,3 +1,22 @@
+# JJB Notes
+
+We'll be checking out something called LiveXAML for Xamarin Forms.
+-- There are lots of limitations to Xamarin Live Player. LiveXAML is a competitor.
+-- LiveXAML is running your app, not hosting it in a separate app like Live Player.
+-- Allows you to change xaml and see updates on the fly.
+
+Realm Mobile DB
+== Relational database for mobile.
+== Free & OS
+== Works to sync your mobile db with the realm object server.
+
+Iconize library
+== Don't worry about including image assets or the image asset sizes.
+== Extensible with things like FontAwesome.
+
+
+
+
 # Beer Drinking
 
 Data is relational, and the database in your Mobile App should be too. The Beer Drinking app demonstrates using the Realm Mobile Database for relating Breweries with the Beers they brew.
@@ -46,3 +65,7 @@ Be sure to comment out the Seed method in the Splash Screen
 After your Realm Object Server is deployed write down the IP address of the server and navigate to {ip address}:9080
 The first time you go to the Dashboard you will be prompted to create an Admin account
 Update your Realm Configuration to use a SyncConfiguration. You can update the Secrets.json with the IP for the Realm Object Server.
+
+TIPS:
+= Split the work up.
+= Consider mobbing.

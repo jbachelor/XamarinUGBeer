@@ -26,6 +26,7 @@ namespace BeerDrinking.ViewModels
         public override void OnNavigatingTo(NavigationParameters parameters)
         {
             // TODO: Set the Model from the Brewer passed in the Navigation Parameters
+            Model = parameters.GetValue<Brewer>("brewer");
         }
     }
 }

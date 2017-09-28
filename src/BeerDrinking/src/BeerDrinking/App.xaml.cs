@@ -51,8 +51,15 @@ namespace BeerDrinking
             // Navigating to "TabbedPage?tab=ViewA&tab=ViewB&tab=ViewC will generate a TabbedPage
             // with three tabs for ViewA, ViewB, & ViewC
             Container.RegisterTypeForNavigation<DynamicTabbedPage>("TabbedPage");
-            
+
             // TODO: Register the additional pages you need for the App 
+            Container.RegisterTypeForNavigation<AddBeerPage>();
+            Container.RegisterTypeForNavigation<AddBreweryPage>();
+            Container.RegisterTypeForNavigation<BreweriesPage>();
+            Container.RegisterTypeForNavigation<BeerPage>();
+            Container.RegisterTypeForNavigation<BreweryBeersPage>();
+            Container.RegisterTypeForNavigation<BreweryDetailPage>();
+            Container.RegisterTypeForNavigation<MainPage>();
         }
 
         protected override void OnStart()
